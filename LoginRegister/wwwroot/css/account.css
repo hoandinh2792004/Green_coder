@@ -1,0 +1,105 @@
+﻿.account-container {
+    background-image: url('../images/background1-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem 0;
+}
+
+.account-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 70%;
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    opacity: 0.8; /* Set opacity to 1 for the box itself */
+}
+
+/* Style for the logo - Increased size */
+.logo-img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px; /* Reduce the bottom margin from 20px to 10px */
+}
+
+h2, label, input {
+    color: #333; /* Change text color to a darker shade for better contrast */
+    font-weight: bold; /* Make text bold */
+}
+
+/* Center the Login title */
+.login-title {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    background-color: #ff69b4; /* Set button color to pink */
+    color: white; /* Change button text color to white */
+    font-weight: bold; /* Make button text bold */
+    border: none; /* Remove default border */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+    .btn:hover {
+        background-color: black; /* Change button background to black on hover */
+        color: white; /* Keep button text color white on hover */
+    }
+
+/* Custom Checkbox Style */
+.form-check-input {
+    display: none; /* Hide the default checkbox */
+}
+
+.form-check-label {
+    position: relative;
+    padding-left: 30px; /* Space for custom checkbox */
+    cursor: pointer;
+}
+
+    /* Custom Checkbox Box */
+    .form-check-label:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #ff69b4; /* Pink border */
+        background-color: white; /* White background */
+        border-radius: 4px; /* Rounded corners */
+    }
+
+/* Check mark style */
+.form-check-input:checked + .form-check-label:before {
+    background-color: white; /* Keep background white when checked */
+    border-color: #ff69b4; /* Pink border */
+}
+
+/* Add checkmark */
+.form-check-input:checked + .form-check-label:after {
+    content: '✓'; /* Checkmark */
+    position: absolute;
+    left: 4px; /* Adjust position for the checkmark */
+    top: -2px; /* Adjust position for the checkmark */
+    color: #ff69b4; /* Pink color for the checkmark */
+    font-weight: bold; /* Make checkmark bold */
+}
+
+/* Change color for specific links */
+.text-decoration-none {
+    color: #ff69b4; /* Set link color to pink */
+}
+
+    .text-decoration-none:hover {
+        text-decoration: underline; /* Add underline on hover for better interaction */
+    }
